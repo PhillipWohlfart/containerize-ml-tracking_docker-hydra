@@ -1,0 +1,9 @@
+defaults:
+ - db: mysql
+ - _self_
+ - learning: classic
+ - mlflow: standard
+
+
+db:
+  user: root

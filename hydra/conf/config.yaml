@@ -1,0 +1,26 @@
+
+logging:
+  - name: custom_logger  # The name of your logger
+    level: INFO  # Minimum log level to capture (INFO or DEBUG)
+    format: '{message}'  # Log message format
+    formatter:
+      name: custom_formatter  # Name of the log formatter
+      fmt: '{message}'  # Log message format
+      datefmt: '%Y-%m-%d %H:%M:%S'  # Date format
+    handlers:
+      - console
+      - file
+
+custom_formatter:
+  class: logging.Formatter
+  fmt: '{message}'
+  datefmt: '%Y-%m-%d %H:%M:%S'
+
+console:
+  class: logging.StreamHandler
+  formatter: custom_formatter
+
+file:
+  class: logging.FileHandler
+  formatter: custom_formatter
+  filename: my_app.log  # Log file name

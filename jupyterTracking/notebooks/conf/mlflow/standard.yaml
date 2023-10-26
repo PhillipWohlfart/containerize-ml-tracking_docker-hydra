@@ -1,0 +1,2 @@
+uri: "http://host.docker.internal:5000"
+experiment_name: "simple-network"
