@@ -1,6 +1,5 @@
 # Description
 Provides an example of how to create a containerized Jupyter Application to run ML experiments in it and track the results as well as defining configurations dynamically.
-\\
 The purpose is to have an app in a container for independent dependencies and still have a powerful tracking of your machine learning experiments.
 
 - Docker for containerization
